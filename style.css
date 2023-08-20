@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+  background-color: #121212;
+}
+
+.navbar{
+  background-color: #121212;
+}
+.hero{
+  width: 100%;
+  height: 66vh;
+  margin-bottom: 3rem;
+}
+.imwrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle,rgba(18, 18, 18, 0.9), rgba(5, 5, 5, 1)), url("./img/background.jpg");
+  padding-top: 17px;
+  
+}
+.imwrap>h2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  z-index: 1;
+  text-shadow: 2px 5px #585868;
+}
+.imwrap>p{
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  margin: 0 0 0 20px;
+  z-index: 3;
+font-family: 'Rubik', sans-serif;
+/* font-family: 'Space Mono', monospace; */
+}
+.imwrap>button{
+  position:absolute;
+  right: 30px;
+  bottom: 10px;
+  background-color: rgba(237, 37, 37, 0.74);
+  border-radius: 50px;
+  padding: 8px 28px;
+  font-weight: bolder;
+  
+}
+.imwrap > img{
+  position: relative; 
+ display: block;
+ margin: 0 auto;
+ height: 100%;
+ max-width: 100%;
+ z-index: 2;
+
+
+}
+.popular h2, .shonenjump h2{
+    margin: 0 0px 20px 30px;
+    
+}
+
+.slider {
+    --_spacer: 1rem;
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(189px,17%);
+  
+    padding: 0 var(--_spacer) var(--_spacer);
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    margin: 0 40px;
+  }
+  
+a{
+  text-decoration: none;
+}
+
+  
+  .item {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background: #121212;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  
+    
+  }
+  
+  .item > img {
+    inline-size: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    
+    
+  }
+  .item>p{
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 2rem);
+  }
+  
+  .snaps-inline > * {
+    scroll-snap-align: start;
+  }
+  
+.slider::-webkit-scrollbar{
+    width: 0;
+}
+.footer{
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgb(0, 0, 0),#000), url("./img/footer.jpeg");
+  width: 100%;
+
+}
+footer  .container{
+  padding-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .imwrap>p{
+    display: none;
+    color: aqua;
+  }
+  .imwrap>button{
+    display: none;
+  }
+}
